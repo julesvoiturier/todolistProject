@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <title>todolist</title>
+</head>
+<body>
+    
+    <section id="head">
+        <p id="title">TODO</p>
+        <div id="addInput">
+            <input id="addTaskInput" type="text" placeholder="Add task">
+            <button id="addTaskButton">Add</button>
+        </div>
+        <div id="sortSection">
+            <button id="sortAll">All</button>
+            <button id="sortPending">Pending</button>
+            <button id="sortDone">Done</button>
+        </div>
+    </section>
+
+    <section id="taskList">
+
+        <div class="task">
+            <input class="taskTitle" readonly="readonly">
+            <div class="taskButtons">
+                <button class="validate"><img src="./public/src/img/check.png" alt=""></button>
+                <button class="modify"><img src="./public/src/img/edit.png" alt=""></button>
+                <button class="delete"><img src="./public/src/img/delete.png" alt=""></button>
+            </div>
+            <!-- <div class="modifyHiddenDiv">
+                <input class = "modifyInput" type="text" placeholder="New Task">
+                <button class = "modifyButton"></button>
+            </div> -->
+        </div>
+
+    </section>
+
+    <script src="./public/js/main.js"></script>
+</body>
+</html>

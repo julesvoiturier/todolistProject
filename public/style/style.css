@@ -1,0 +1,235 @@
+*{
+    transition: 0.1s;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#head{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#title{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(87, 87, 87);
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#sortSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#sortSection button{
+    font-size: 15px;
+    height: 35px;
+    width: 100px;
+    border-radius: 100px;
+    border-style: none;
+    background: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
+    /* transition: 0.1s; */
+}
+
+#sortSection button:hover{
+    background: rgb(210, 210, 210);
+}
+
+
+
+
+#sortSection p{
+    margin-right: 10px;
+}
+
+#addInput{
+    height: 60px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    border-radius: 100px;
+}
+
+#addTaskInput{
+    font-size: 15px;
+    height: 100%;
+    width: 85%;
+    padding: 0;
+    padding-left: 20px;
+    border-radius: 100px 0px 0px 100px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    /* outline: 2px solid black; */
+}
+
+#addTaskInput:focus{
+    height: 100%;
+    width: 85%;
+    padding: 0;
+    padding-left: 20px;
+    border-radius: 100px 0px 0px 100px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    outline: none;
+}
+
+#addTaskButton{
+    font-size: 15px;
+    height: 100%;
+    width: 15%;
+    border-radius: 0px 100px 100px 0px;
+    margin: 0;
+    /* outline: 2px solid black; */
+    background-color: rgb(210, 210, 210);
+    border-style: none;
+    color: rgb(0, 0, 0);
+    padding-right: 14px;
+}
+
+#addTaskButton:hover{
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+#taskList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.task:first-child{
+    display: none;
+}
+
+.task{
+    transition: 0.1s;
+    display: flex;
+    width: 33.5%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 12px;
+    height: 60px;
+    border-radius: 100px 100px 100px 100px;
+    outline: 1px solid rgb(233, 233, 233);
+    position: relative;
+}
+
+.taskTitle {
+    border: none;
+    border-radius: 100px;
+    background: none;
+    font-size: 15px;
+    width: 75%;
+    outline: 1px solid rgba(255, 255, 255, 0);
+}
+
+.taskTitle:focus{
+    outline: none;
+}
+.taskButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.taskButtons button{
+    border: none;
+    height: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskButtons button img{
+    width: 15px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+.validate{
+    background-color: rgb(101, 246, 137);
+}
+
+.validate:hover{
+    background-color: rgb(83, 216, 117);
+}
+
+.delete{
+    background-color: rgb(255, 117, 83);
+}
+
+.delete:hover{
+    background-color: rgb(232, 96, 62);
+}
+
+.modify{
+    background-color: rgb(87, 87, 87);
+}
+
+.modify:hover{
+    background-color: rgb(59, 59, 59);
+}
+
+.greenBg {
+    outline: 2px solid rgb(101, 246, 137);;
+}
+
+.redBg {
+    outline: 2px solid rgb(255, 117, 83);;
+}
+
+.appear{
+    display: flex;
+}
+
+.disappear {
+    display: none;
+}
+
+.buttonClick{
+    background: rgb(87, 87, 87) !important;
+    color: white !important;
+}
+
+.buttonClick2{
+    outline: 1px solid rgb(255, 255, 255) !important;
+}
+
+.buttonClick3{
+    outline: 2px solid rgb(118, 106, 253) !important;
+}
+
+.buttonClick4{
+    background: rgb(118, 106, 253) !important;
+}
+
+.textModify{
+    color: rgb(118, 106, 253);
+}
